@@ -691,31 +691,58 @@ Testimonials
       color: var(--gold)
     }
 
-    .floating {
-      position: fixed;
-      right: 20px;
-      z-index: 1050;
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      color: #fff;
-      text-decoration: none;
-      font-size: 1.35rem;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, .22)
+    /* Floating Buttons (Left Side) */
+
+.floating{
+    position:fixed;
+    left:20px;
+    right:auto;
+    z-index:999;
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-size:24px;
+    transition:.3s;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+.floating:hover{
+    transform:translateY(-4px) scale(1.08);
+}
+
+.float-wa{
+    bottom:95px;
+    background:#25D366;
+    color:#fff;
+}
+
+.float-call{
+    bottom:25px;
+    background:#d7ae58;
+    color:#073c32;
+}
+
+@media(max-width:768px){
+
+    .floating{
+        width:52px;
+        height:52px;
+        left:15px;
     }
 
-    .float-wa {
-      bottom: 88px;
-      background: #25D366
+    .float-wa{
+        bottom:82px;
     }
 
-    .float-call {
-      bottom: 20px;
-      background: var(--gold);
-      color: #17221f
+    .float-call{
+        bottom:18px;
     }
+
+}
 
     .reveal {
       opacity: 0;
@@ -1791,6 +1818,21 @@ TESTIMONIALS
     });
 
   </script>
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6a7667fc941ab01d456d7ce8/1jvf8cddm';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 
 </body>
 
