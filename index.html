@@ -27,125 +27,298 @@
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
     rel="stylesheet">
   <style>
-    /*=================================
-Testimonials
-==================================*/
 
-    /*==========================
-TESTIMONIALS
-==========================*/
+    /*=========================================
+FEATURED SERVICES
+=========================================*/
 
-.testimonials-section{
+.featured-services{
 
-background:#fbf7ed;
+background:#f8f8f8;
 
 }
 
-.review-card{
+.featured-card{
 
 background:#fff;
 
 border-radius:20px;
 
-padding:35px;
+overflow:hidden;
 
-height:100%;
+border:2px solid #d7ae58;
 
 box-shadow:0 15px 35px rgba(0,0,0,.08);
 
-border:1px solid #eee;
+transition:.35s;
+
+height:100%;
+
+}
+
+.featured-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 25px 45px rgba(0,0,0,.18);
+
+}
+
+.featured-image{
+
+overflow:hidden;
+
+}
+
+.featured-image img{
+
+width:100%;
+
+height:230px;
+
+object-fit:cover;
+
+transition:.5s;
+
+}
+
+.featured-card:hover img{
+
+transform:scale(1.08);
+
+}
+
+.featured-content{
+
+padding:25px;
+
+text-align:center;
+
+}
+
+.service-top{
+
+display:inline-block;
+
+background:#073c32;
+
+color:#fff;
+
+padding:7px 16px;
+
+font-size:12px;
+
+font-weight:700;
+
+border-radius:30px;
+
+margin-bottom:15px;
+
+letter-spacing:.5px;
+
+}
+
+.featured-content h4{
+
+font-weight:700;
+
+color:#073c32;
+
+margin-bottom:15px;
+
+}
+
+.featured-content p{
+
+font-size:15px;
+
+line-height:1.8;
+
+color:#666;
+
+min-height:120px;
+
+}
+
+.service-btn{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:10px;
+
+background:#0d6b55;
+
+color:#fff;
+
+padding:15px;
+
+border-radius:50px;
+
+font-weight:700;
+
+text-decoration:none;
 
 transition:.3s;
 
 }
 
-.review-card:hover{
+.service-btn:hover{
 
-transform:translateY(-8px);
+background:#073c32;
 
-}
-
-.review-card p{
-
-color:#666;
-
-line-height:1.8;
-
-margin:20px 0;
-
-font-size:15px;
+color:#fff;
 
 }
 
-.review-card h5{
+.service-btn i{
 
-font-weight:700;
+font-size:20px;
 
-margin-bottom:5px;
-
-color:#073c32;
+color:#25D366;
 
 }
+    /*=================================
+Testimonials
+==================================*/
 
-.review-card span{
+    .testimonials {
 
-color:#888;
+      background: #fbf7ed;
 
-font-size:14px;
+      position: relative;
 
-}
+      overflow: hidden;
 
-.stars{
+    }
 
-color:#f8b400;
+    .testimonials:before {
 
-font-size:22px;
+      content: "";
 
-letter-spacing:2px;
+      position: absolute;
 
-}
+      inset: 0;
 
-.carousel-control-prev-icon,
+      background-image: radial-gradient(#073c32 1px, transparent 1px);
 
-.carousel-control-next-icon{
+      background-size: 24px 24px;
 
-background-color:#073c32;
+      opacity: .04;
 
-padding:20px;
+    }
 
-border-radius:50%;
+    .testimonials .container {
 
-}
+      position: relative;
 
-.carousel-control-prev{
+      z-index: 2;
 
-left:-70px;
+    }
 
-}
+    .testimonial-card {
 
-.carousel-control-next{
+      background: #fff;
 
-right:-70px;
+      border-radius: 24px;
 
-}
+      padding: 35px;
 
-@media(max-width:991px){
+      height: 100%;
 
-.carousel-control-prev,
+      box-shadow: 0 15px 45px rgba(0, 0, 0, .08);
 
-.carousel-control-next{
+      transition: .35s;
 
-display:none;
+      border: 1px solid #ece2cc;
 
-}
+    }
 
-.review-card{
+    .testimonial-card:hover {
 
-margin-bottom:20px;
+      transform: translateY(-8px);
 
-}
+      box-shadow: 0 22px 60px rgba(0, 0, 0, .15);
 
-}
+    }
+
+    .stars {
+
+      color: #d7ae58;
+
+      font-size: 24px;
+
+      margin-bottom: 20px;
+
+      letter-spacing: 3px;
+
+    }
+
+    .testimonial-card p {
+
+      color: #666;
+
+      font-size: 16px;
+
+      line-height: 1.8;
+
+      margin-bottom: 30px;
+
+    }
+
+    .client {
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 15px;
+
+    }
+
+    .client-icon {
+
+      width: 60px;
+
+      height: 60px;
+
+      border-radius: 50%;
+
+      background: #073c32;
+
+      color: #fff;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      font-size: 24px;
+
+    }
+
+    .client h5 {
+
+      margin-bottom: 3px;
+
+      color: #073c32;
+
+      font-weight: 700;
+
+    }
+
+    .client span {
+
+      color: #999;
+
+      font-size: 14px;
+
+    }
+
     .hero h1 {
       font-family: "Mukta", Sans-serif;
       font-size: 45px;
@@ -936,7 +1109,7 @@ margin-bottom:20px;
           </div>
         </div>
 
-        
+
         <div class="col-md-6 col-lg-4 reveal">
           <div class="service-card">
             <div class="service-visual"><i class="fa-solid fa-person-praying"></i></div>
@@ -969,6 +1142,233 @@ margin-bottom:20px;
       </div>
     </div>
   </section>
+
+<!-- ===========================================
+FEATURED ISLAMIC GUIDANCE SERVICES
+=========================================== -->
+
+<section class="section featured-services">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="eyebrow">
+                Featured Guidance
+            </span>
+
+            <h2 class="section-title">
+                Islamic Spiritual Guidance Services
+            </h2>
+
+            <p class="text-muted2">
+                Private consultation for personal, family and relationship concerns.
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Card 1 -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="featured-card">
+
+                    <div class="featured-image">
+
+                        <img src="assets/images/love-problems.jpg" alt="Love Problems">
+
+                    </div>
+
+                    <div class="featured-content">
+
+                        <span class="service-top">
+
+                            ISLAMIC GUIDANCE FOR
+
+                        </span>
+
+                        <h4>
+
+                            Love Problems
+
+                        </h4>
+
+                        <p>
+
+                            Respectful Islamic guidance for relationship concerns,
+                            misunderstandings and emotional challenges.
+
+                        </p>
+
+                        <a href="https://wa.me/917678285451"
+                           class="service-btn">
+
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                            +91-7678285451
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 2 -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="featured-card">
+
+                    <div class="featured-image">
+
+                        <img src="assets/images/lost-love.jpg" alt="Lost Love">
+
+                    </div>
+
+                    <div class="featured-content">
+
+                        <span class="service-top">
+
+                            ISLAMIC GUIDANCE FOR
+
+                        </span>
+
+                        <h4>
+
+                            Lost Love Guidance
+
+                        </h4>
+
+                        <p>
+
+                            Personal consultation for relationship concerns
+                            and thoughtful decision-making.
+
+                        </p>
+
+                        <a href="https://wa.me/917678285451"
+                           class="service-btn">
+
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                            +91-7678285451
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 3 -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="featured-card">
+
+                    <div class="featured-image">
+
+                        <img src="assets/images/relationship-guidance.jpg"
+                             alt="Relationship Guidance">
+
+                    </div>
+
+                    <div class="featured-content">
+
+                        <span class="service-top">
+
+                            ISLAMIC GUIDANCE FOR
+
+                        </span>
+
+                        <h4>
+
+                            Relationship Guidance
+
+                        </h4>
+
+                        <p>
+
+                            Guidance focused on improving communication,
+                            understanding and family harmony.
+
+                        </p>
+
+                        <a href="https://wa.me/917678285451"
+                           class="service-btn">
+
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                            +91-7678285451
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 4 -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="featured-card">
+
+                    <div class="featured-image">
+
+                        <img src="assets/images/love-marriage.jpg"
+                             alt="Marriage Guidance">
+
+                    </div>
+
+                    <div class="featured-content">
+
+                        <span class="service-top">
+
+                            ISLAMIC GUIDANCE FOR
+
+                        </span>
+
+                        <h4>
+
+                            Marriage Guidance
+
+                        </h4>
+
+                        <p>
+
+                            Private consultation for marriage, family
+                            relationships and important life decisions.
+
+                        </p>
+
+                        <a href="https://wa.me/917678285451"
+                           class="service-btn">
+
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                            +91-7678285451
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
 
   <section id="case-studies" class="section case-study pattern">
     <div class="container position-relative">
@@ -1024,38 +1424,35 @@ TESTIMONIALS
      TESTIMONIAL SECTION
 ========================= -->
 
-<section class="section testimonials-section">
+  <section class="section testimonials-section">
 
-<div class="container">
+    <div class="container">
 
-<div class="text-center mb-5">
+      <div class="text-center mb-5">
 
-<span class="eyebrow">
-Client Testimonials
-</span>
+        <span class="eyebrow">
+          Client Testimonials
+        </span>
 
-<h2 class="section-title mt-2">
-What People Say About
-<br>
-Maulana Abdul Hakim Haqqani
-</h2>
+        <h2 class="section-title mt-2">
+          What People Say About
+          <br>
+          Maulana Abdul Hakim Haqqani
+        </h2>
 
-<p class="text-muted2 mt-3">
-Real experiences shared by people who consulted privately.
-</p>
+        <p class="text-muted2 mt-3">
+          Real experiences shared by people who consulted privately.
+        </p>
 
-</div>
+      </div>
 
-<div id="testimonialSlider"
-class="carousel slide"
-data-bs-ride="carousel"
-data-bs-interval="3500">
+      <div id="testimonialSlider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
 
-<div class="carousel-inner">
+        <div class="carousel-inner">
 
-<!-- Slide 1 -->
+          <!-- Slide 1 -->
 
-<div class="carousel-item active">
+          <div class="carousel-item active">
 
 <div class="row g-4">
 
@@ -1063,15 +1460,13 @@ data-bs-interval="3500">
 
 <div class="review-card">
 
-<div class="stars">
-★★★★★
-</div>
+<div class="stars">★★★★★</div>
 
 <p>
 "I was very confused regarding my marriage. The guidance I received helped me become calmer and make decisions thoughtfully."
 </p>
 
-<h5>Ahmed Khan</h5>
+<h5>Rahul Sharma</h5>
 
 <span>New Delhi</span>
 
@@ -1083,15 +1478,13 @@ data-bs-interval="3500">
 
 <div class="review-card">
 
-<div class="stars">
-★★★★★
-</div>
+<div class="stars">★★★★★</div>
 
 <p>
 "The consultation was private and respectful. I appreciated the time taken to understand my situation."
 </p>
 
-<h5>Sana Parveen</h5>
+<h5>Maria D'Souza</h5>
 
 <span>Lucknow</span>
 
@@ -1103,9 +1496,7 @@ data-bs-interval="3500">
 
 <div class="review-card">
 
-<div class="stars">
-★★★★★
-</div>
+<div class="stars">★★★★★</div>
 
 <p>
 "I contacted Maulana Sahib through WhatsApp. The guidance gave me confidence and peace."
@@ -1123,9 +1514,9 @@ data-bs-interval="3500">
 
 </div>
 
-<!-- Slide 2 -->
+          <!-- Slide 2 -->
 
-<div class="carousel-item">
+          <div class="carousel-item">
 
 <div class="row g-4">
 
@@ -1133,15 +1524,13 @@ data-bs-interval="3500">
 
 <div class="review-card">
 
-<div class="stars">
-★★★★★
-</div>
+<div class="stars">★★★★★</div>
 
 <p>
 "I felt listened to without judgment. The discussion helped me think more clearly about my family situation."
 </p>
 
-<h5>Farhan Ahmed</h5>
+<h5>Priya Verma</h5>
 
 <span>Mumbai</span>
 
@@ -1153,15 +1542,13 @@ data-bs-interval="3500">
 
 <div class="review-card">
 
-<div class="stars">
-★★★★★
-</div>
+<div class="stars">★★★★★</div>
 
 <p>
 "The WhatsApp consultation was convenient and professional. I am thankful for the sincere guidance."
 </p>
 
-<h5>Nazia Begum</h5>
+<h5>Joseph Fernandes</h5>
 
 <span>Kolkata</span>
 
@@ -1173,15 +1560,13 @@ data-bs-interval="3500">
 
 <div class="review-card">
 
-<div class="stars">
-★★★★★
-</div>
+<div class="stars">★★★★★</div>
 
 <p>
-"I received patient advice and practical suggestions rooted in faith. Highly recommended for private consultation."
+"I received patient advice and practical suggestions. The conversation was respectful and helped me approach my situation more positively."
 </p>
 
-<h5>Yusuf Sheikh</h5>
+<h5>Gurpreet Singh</h5>
 
 <span>Bengaluru</span>
 
@@ -1193,31 +1578,23 @@ data-bs-interval="3500">
 
 </div>
 
-</div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialSlider" data-bs-slide="prev">
 
-<button class="carousel-control-prev"
-type="button"
-data-bs-target="#testimonialSlider"
-data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
 
-<span class="carousel-control-prev-icon"></span>
+        </button>
 
-</button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialSlider" data-bs-slide="next">
 
-<button class="carousel-control-next"
-type="button"
-data-bs-target="#testimonialSlider"
-data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
 
-<span class="carousel-control-next-icon"></span>
+        </button>
 
-</button>
+      </div>
 
-</div>
+    </div>
 
-</div>
-
-</section>
+  </section>
 
   <section class="section steps">
     <div class="container">
@@ -1412,6 +1789,7 @@ data-bs-slide="next">
       const txt = `Assalamualaikum Maulana Abdul Hakim Haqqani,\n\nI would like a private consultation.\n\nName: ${n}\nPhone: ${p}\nEmail: ${em || 'Not provided'}\nConcern: ${c}\nMessage: ${m || 'Not provided'}`;
       window.open('https://wa.me/917678285451?text=' + encodeURIComponent(txt), '_blank');
     });
+
   </script>
 
 </body>
